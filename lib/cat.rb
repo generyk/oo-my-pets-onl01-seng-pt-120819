@@ -8,5 +8,11 @@ class Cat
     @name = name 
     @owner = owner 
     @mood = mood 
-    @@all.push(self)
+    @@all << self 
+  end 
+  
+  def self.all
+    @@all
+  end 
+
 end
